@@ -1,0 +1,243 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+.header-container {
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #b01313;
+ display: flex;
+  align-items: center;
+ JUSTIFY-content: center;
+   background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+.header-content {
+  font-size:2rem;
+  margin-right: 250px;
+  font-weight: 700
+}
+
+.downloadbox {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  /* border: 1px solid #b01313; */
+}
+
+.btn{
+  display: flex;
+  gap: 10px;
+}
+.btn1, .btn2 {
+    
+  background-color: #305b9c;
+
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.btn1, .btn2:hover {
+  background-color: #537fae;
+  transform: translateY(-2px); /* Slightly lifts the button */
+}
+
+
+
+  
+.iphonebox img{
+  padding-bottom: 0 ;
+}
+
+.hero-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 70px;
+}
+
+.sponsor {
+  margin-top: 150px;
+  text-align: center;
+  background-color: beige;
+}
+
+.sponsor img{
+  border-radius: 50px;
+  height: 100px;
+}
+
+.logos{
+margin-top: 100px;
+  display: flex;
+  justify-content: center;
+ 
+ flex-wrap: wrap;
+  text-align: center;
+  
+}
+.logos img{
+  
+  height: 40px;
+}
+
+.pricelab {
+  text-align: center;
+}
+
+.price-container{
+  display: flex;
+  justify-content: center;
+ 
+ flex-wrap: wrap;
+  text-align: center;
+  gap: 25px;
+  margin-bottom: 100px;
+}
+
+.price{
+   border: solid rgba(126, 115, 91, 0.996) 2px; 
+  border-radius: 15px;
+  /* height: 18.8rem; */
+  width: 25%;
+  box-sizing: border-box;
+}
+
+.dogname1, .dogname2, .dogname3 {
+padding: 1px;
+border-radius: 10px;
+}
+
+.dogname3{
+  background-color: black;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+button{
+  background-color: black;
+  padding: 10px;
+  color: azure;
+  border-radius: 10px;
+  width: 90%;
+  font-size: 20px;
+  margin-bottom: 10px;
+  
+}
+
+.price-container :hover{
+transform: translate(1);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 30px 30px 30px rgba(55, 55, 221, 0.04);
+  border-color: #1c5fb1;
+  
+}
+
+
+
+
+
+.foot{
+  display: flex;
+  justify-content:space-evenly;
+background-color: #ef8172;
+height: 300px;
+align-items: center;
+
+}
+
+.contact{
+  display: flex;
+  text-decoration: none;
+  margin-top: 40px;
+ justify-content: space-around;
+
+ 
+}
+
+.contact li{
+  list-style: none;
+  height: 40px;
+  }
+
+
+
+
+
+@media (max-width: 768px) {
+  /* CSS rules written here apply ONLY when the screen width is 768px or smaller */
+  .price-container{
+    flex-direction: column;
+  /* width: 1000px; */
+  align-items: center;
+  
+}
+}
+
+@media (max-width: 768px) {
+  /* CSS rules written here apply ONLY when the screen width is 768px or smaller */
+  .header-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  }
+  
+  @media (max-width: 768px) {
+  /* CSS rules written here apply ONLY when the screen width is 768px or smaller */
+  .hero-container{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+ 
+}
